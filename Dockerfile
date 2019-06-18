@@ -1,4 +1,4 @@
-FROM library/docker:stable
+FROM alpine:latest
 
 ENV HOME_DIR=/opt/crontab
 RUN apk add --no-cache --virtual .run-deps gettext bash jq \

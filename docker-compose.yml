@@ -2,7 +2,7 @@ version: "2.1"
 
 services:
   myapp:
-    image: alpine:3.5
+    image: alpine:latest
     restart: always
     command: "sh -c 'while :; do sleep 1; done'"
 
@@ -12,4 +12,4 @@ services:
     volumes:
      - "/var/run/docker.sock:/var/run/docker.sock:ro"
     # - "/usr/bin/docker:/usr/bin/docker:ro"
-     - "/Users/willfarrell/Development/docker/docker-crontab/config.json:/opt/crontab/config.json:rw"
+     - "/srv/docer/crontab/config.json:/opt/crontab/config.json:rw"
